@@ -2,7 +2,7 @@ import articlesTpl from "./templates/articles.hbs";
 import './sass/index.scss';
 import NewsApiService from './js/news-service';
 import LoadMoreBtn from './js/components/load-more-btn';
-
+import crud from './js/crud';
 const refs = {
     searchForm: document.querySelector('.js-search-form'),
     articlesContainer: document.querySelector('.js-articles-container'),

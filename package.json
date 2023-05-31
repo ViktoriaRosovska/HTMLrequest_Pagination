@@ -5,7 +5,8 @@
   "homepage": "https://github.com/ViktoriaRosovska/HTMLrequest_Pagination",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /HTMLrequest_Pagination/"
+    "build": "parcel build src/*.html --public-url /HTMLrequest_Pagination/",
+    "server": "json-server --watch db.json -p 4040 -d 300"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "json-server": "^0.17.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "parcel-transformer-hbs": "^1.0.4",
