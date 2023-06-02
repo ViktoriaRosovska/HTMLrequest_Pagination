@@ -1,7 +1,9 @@
 const BASE_URL = 'http://localhost:4040';
 
 function fetchPosts() {
-    return fetch(`${BASE_URL}/posts`).then(res => res.json()).then(console.log);
+    return fetch(`${BASE_URL}/posts`).
+        then(res => res.json()).
+        then(console.log);
 }
 
 // fetchPosts();
@@ -70,11 +72,13 @@ function deletePostById(postId) {
 
 // deletePostById("3pi7p8w");
 
-fetchPosts(); 
+// fetchPosts(); 
 
-fetch('').then(response => {
-    if (response.ok) {
-        return response.json()
-    }
-    throw new Error(response.statusText);
-});
+// fetch('').then(response => {
+//     if (response.ok) {
+//         return response.json()
+//     }
+//     throw new Error(response.statusText);
+// });
+
+export { fetchPosts };
